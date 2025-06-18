@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ifechukwunewworld - About</title>
+    <meta name="description" content="About Ifechukwu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="aboutpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <audio id="click-sound" src="./sound-1-167181.mp3"></audio>
+
+    <header>
+        <a href="index.html" class="logo play-sound">ifechukwu</a>
+        <button class="menu-toggle play-sound">☰</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+                Welcome to my portfolio! I'm Ifechukwu, a passionate individual who loves exploring new technologies and creative fields. I have expertise in various domains including programming, video editing, ethical hacking, and content creation.
+            </p>
+            <p>
+                My journey began with a fascination for technology and its potential to solve real-world problems. Over time, I have honed my skills across multiple disciplines, each contributing to my growth as a versatile professional.
+            </p>
+            <p>
+                Hello! I'm Ifechukwu, a versatile professional with experience in various fields.<br><br>
+
+                1. **Programming**: 
+                - I write and test code for applications and software.
+                - I translate designs and specifications into code.
+                - I debug and update existing programs.<br><br>
+
+                2. **Web Development**: 
+                - I build and maintain websites.
+                - I ensure sites are visually appealing and user-friendly.
+                - I work on both front-end and back-end of web applications.<br><br>
+
+                3. **Hacking**: 
+                - As an ethical hacker, I test systems for vulnerabilities to enhance security.<br><br>
+
+                4. **Video Editing**: 
+                - I edit raw footage into polished products.
+                - I add effects, transitions, and audio.<br><br>
+
+                5. **Content Creation**: 
+                - I create engaging content for various platforms, including blogs, social media, and YouTube.<br><br>
+
+                I am passionate about leveraging my skills in these areas to contribute to impactful projects and achieve excellence.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html" class="logo play-sound">ifechukwu</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://twitter.com/" class="fa fa-twitter play-sound"></a>
+                <a href="https://www.google.com/" class="fa fa-google play-sound"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin play-sound"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube play-sound"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram play-sound"></a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="index.html" class="play-sound">Home</a></li>
+                <li><a href="services.html" class="play-sound">Services</a></li>
+                <li><a href="skills.html" class="play-sound">Skills</a></li>
+                <li><a href="education.html" class="play-sound">Education</a></li>
+                <li><a href="experience.html" class="play-sound">Experience</a></li>
+                <li><a href="contact.html" class="play-sound">Contact</a></li>
+            </ul>
+
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle the visibility of the navigation menu
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the audio element
+            const clickSound = document.getElementById('click-sound');
+
+            // Function to play sound
+            function playClickSound() {
+                clickSound.play();
+            }
+
+            // Add event listeners to clickable text or elements
+            const clickableElements = document.querySelectorAll('.play-sound');
+
+            clickableElements.forEach(element => {
+                element.addEventListener('click', playClickSound);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ifechukwunewworld</title>
+    <meta name="description" content="A portfolio showcasing Ifechukwu's work and skills.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../ifechukwu css file/style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Audio element for click sound -->
+    <audio id="click-sound" src="./sounds/mixkit-sci-fi-click-900.wav"></audio>
+
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo play-sound"> eltondeantech </a>
+
+        <!-- Hamburger Menu Toggle Button -->
+        <button class="menu-toggle play-sound">☰</button>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#" class="active play-sound">Home</a>
+            <a href="./services.html" class="play-sound">Services</a>
+            <a href="./aboutpage.html" class="play-sound">Skills</a>
+            <a href="./education.html" class="play-sound">Education</a>
+            <a href="./experiencepage.html" class="play-sound">Experience</a>
+            <a href="./contact.html" class="play-sound">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-img">
+            <img src="./images/ebuka.jpg" alt="Ifechukwu's Image">
+        </div>
+        <div class="home-content">
+            <h1>Hi, it's me <span> Eltondeantech i'm a </span></h1>
+            <!-- Element for the typing effect -->
+            <h3 class="typing-text">I'm a <span></span></h3>
+
+            <p>
+                1. Programmer:
+                - Writes and tests code for applications and software.
+                - Translates designs and specifications into code.
+                - Debugs and updates programs.<br>
+
+                2. Web Developer:
+                - Builds and maintains websites.
+                - Ensures user-friendly and functional sites.<br>
+
+                3. Hacker:
+                - Ethical hacking to test and improve security.<br>
+
+                4. Video Editor:
+                - Edits video footage and adds effects.
+            </p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://x.com/cyberGodofearth/header_photo" class="fa fa-twitter play-sound" aria-label="Twitter"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound" aria-label="Google"></a>
+                <a href="https://www.linkedin.com/ifechukwumosesnnajieze" class="fa fa-linkedin play-sound" aria-label="LinkedIn"></a>
+                <a href="https://www.facebook.com/profile.php?id=100093497757415&mibextid=ZbWKwL" class="fa fa-facebook play-sound" aria-label="Facebook"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound" aria-label="Instagram"></a>
+                <a href="https://www.pinterest.com/ifechukwumosesnnajieze" class="fa fa-pinterest play-sound" aria-label="Pinterest"></a>
+                <a href="https://www.snapchat.com/add/ifechukwunew?share_id=-1nDFp1q9wQ&locale=en-US" class="fa fa-snapchat-ghost play-sound" aria-label="Snapchat"></a>
+            </div>
+
+            <!-- Hire Me Button -->
+            <a href="mailto:ifechukwumosesnnajieze@gmail.com" class="btn play-sound">Hire me</a>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo play-sound">ifechukwu</a>
+            </div>
+
+            <!-- Footer Socials -->
+            <div class="footer-socials">
+                <a href="" class="fa fa-twitter play-sound" aria-label="Twitter"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound" aria-label="Google"></a>
+                <a href="https://www.linkedin.com/ifechukwumosesnnajieze" class="fa fa-linkedin play-sound" aria-label="LinkedIn"></a>
+                <a href="https://www.facebook.com/profile.php?id=100093497757415&mibextid=ZbWKwL" class="fa fa-facebook play-sound" aria-label="Facebook"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound" aria-label="Instagram"></a>
+            </div>
+
+            <!-- Footer Navigation Links -->
+            <ul class="footer-links">
+                <li><a href="#" class="play-sound">Home</a></li>
+                <li><a href="./services.html" class="play-sound">Services</a></li>
+                <li><a href="./skills.html" class="play-sound">Skills</a></li>
+                <li><a href="education.html" class="play-sound">Education</a></li>
+                <li><a href="./experiencepage.html" class="play-sound">Experience</a></li>
+                <li><a href="./contact.html" class="play-sound">Contact</a></li>
+            </ul>
+
+            <!-- Copyright Information -->
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries and Scripts -->
+
+    <!-- Include Typed.js from a CDN (required before your script that uses it) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Your main JavaScript file -->
+    <script src="/js file/main.js"></script>
+
+    <!-- Inline JavaScript for basic DOM manipulation (consider moving to main.js) -->
+    <script>
+        // Toggle menu visibility
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set the current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        // Play sound on click
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickSound = document.getElementById('click-sound');
+            const clickableElements = document.querySelectorAll('.play-sound');
+            clickableElements.forEach(element => {
+                element.addEventListener('click', () => {
+                    // Reset and play the sound
+                    if (clickSound) {
+                        clickSound.currentTime = 0; // Rewind to the start
+                        clickSound.play().catch(e => console.error("Error playing sound:", e)); // Add error handling
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/66da0a1fea492f34bc0e2d42/1i71rf3t3';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+
+</body>
+</html>

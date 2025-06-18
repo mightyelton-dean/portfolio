@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Services - Ifechukwu</title>
+    <meta name="description" content="Services offered by Ifechukwu in programming, web development, ethical hacking, video editing, and content creation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="../ifechukwu css file/services.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <audio id="click-sound" src="./sounds/sound-1-167181.mp3"></audio>
+
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo play-sound">ifechukwu</a>
+        <!-- Hamburger Menu -->
+        <button class="menu-toggle play-sound">☰</button>
+        <nav>
+            <a href="./index.html" class="play-sound">Home</a>
+            <a href="#" class="active play-sound">Services</a>
+            <a href="./skills.html" class="play-sound">Skills</a>
+            <a href="./education.html" class="play-sound">Education</a>
+            <a href="./experiencepage.html" class="play-sound">Experience</a>
+            <a href="./contact.html" class="play-sound">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-content">
+            <h1>Our Services</h1>
+            <div class="service-item">
+                <h2>Programming</h2>
+                <p>
+                    As a programmer, I specialize in writing and testing code to develop functional and efficient applications. My expertise includes translating designs and specifications into working code and debugging existing programs to enhance performance.
+                </p>
+                <p>
+                    **How I Can Help:** Whether you need a custom software solution, application development, or maintenance of existing systems, I offer reliable programming services tailored to meet your needs.
+                </p>
+            </div>
+            <div class="service-item">
+                <h2>Web Development</h2>
+                <p>
+                    With extensive experience in web development, I build and maintain websites that are visually appealing, user-friendly, and highly functional. My skills cover both front-end and back-end development to ensure a seamless online experience.
+                </p>
+                <p>
+                    **How I Can Help:** I can create or revamp your website, improve its functionality, and optimize it for a better user experience. From initial design to deployment, I provide comprehensive web development services.
+                </p>
+            </div>
+            <div class="service-item">
+                <h2>Ethical Hacking</h2>
+                <p>
+                    As an ethical hacker, I test systems for vulnerabilities to help improve their security. My approach includes identifying weaknesses and providing solutions to safeguard your digital assets.
+                </p>
+                <p>
+                    **How I Can Help:** If you need to ensure your systems are secure and resilient against cyber threats, I offer thorough security assessments and solutions to fortify your defenses.
+                </p>
+            </div>
+            <div class="service-item">
+                <h2>Video Editing</h2>
+                <p>
+                    I offer professional video editing services to transform raw footage into polished, engaging content. My editing process includes adding effects, transitions, and audio enhancements to create compelling videos.
+                </p>
+                <p>
+                    **How I Can Help:** Whether you need edited content for marketing, personal projects, or professional presentations, I provide creative and high-quality video editing services to meet your goals.
+                </p>
+            </div>
+            <div class="service-item">
+                <h2>Content Creation</h2>
+                <p>
+                    As a content creator, I produce engaging and relevant content for various platforms, including blogs, social media, and YouTube. My focus is on creating content that resonates with your audience and supports your objectives.
+                </p>
+                <p>
+                    **How I Can Help:** I can help you build a strong online presence through carefully crafted content that captures attention and drives engagement across multiple platforms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo play-sound">ifechukwu</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://x.com/MosesNnajieze?t=99q-cYaODcdNMxij_QEy_g&s=09" class="fa fa-twitter play-sound"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound"></a>
+                <a href="https://www.snapchat.com/add/ifechukwunew?share_id=-1nDFp1q9wQ&locale=en-US" class="fa fa-snapchat play-sound"></a>
+                <a href="https://www.youtube.com/ifechukwumosesnnajieze" class="fa fa-youtube play-sound"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound"></a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="./index.html" class="play-sound">Home</a></li>
+                <li><a href="./services.html" class="play-sound">Services</a></li>
+                <li><a href="./skills.html" class="play-sound">Skills</a></li>
+                <li><a href="./education.html" class="play-sound">Education</a></li>
+                <li><a href="./experiencepage.html" class="play-sound">Experience</a></li>
+                <li><a href="./contact.html" class="play-sound">Contact</a></li>
+            </ul>
+
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle menu and update year -->
+    <script>
+        // Toggle the visibility of the navigation menu
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the audio element
+            const clickSound = document.getElementById('click-sound');
+
+            // Function to play sound
+            function playClickSound() {
+                clickSound.play();
+            }
+
+            // Add event listeners to clickable text or elements
+            const clickableElements = document.querySelectorAll('.play-sound');
+
+            clickableElements.forEach(element => {
+                element.addEventListener('click', playClickSound);
+            });
+        });
+    </script>
+</body>
+</html>

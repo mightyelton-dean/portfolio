@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ifechukwunewworld - Experience</title>
+    <meta name="description" content="Experience of Ifechukwu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style">
+    <link rel="stylesheet" href="../ifechukwu css file/experience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <audio id="click-sound" src="../Ifechukwunewworld html/sounds/sound-1-167181.mp3"></audio>
+
+    <header>
+        <a href="index.html" class="logo play-sound">ifechukwu</a>
+        <button class="menu-toggle play-sound">☰</button>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./aboutpage.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./education.html">Education</a>
+            <a href="./experiencepage.html" class="active">Experience</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="experience">
+        <h1>Experience</h1>
+        <div class="experience-item">
+            <h2>Programming Experience</h2>
+            <p>
+                Over the years, I have worked on various programming projects that involved writing, testing, and debugging code. My experience includes developing applications, translating design specifications into functional code, and maintaining software.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h2>Web Development Experience</h2>
+            <p>
+                I have built and maintained several websites, focusing on creating user-friendly and visually appealing web applications. My work includes both front-end and back-end development, ensuring robust and responsive designs.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h2>Ethical Hacking Experience</h2>
+            <p>
+                As an ethical hacker, I have conducted security assessments to identify vulnerabilities in systems and applications. My role has involved improving security measures and ensuring that systems are resilient against attacks.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h2>Video Editing Experience</h2>
+            <p>
+                I have edited numerous video projects, ranging from short clips to full-length videos. My editing work includes adding effects, transitions, and audio enhancements to create polished and professional final products.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html" class="logo play-sound">ifechukwu</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://x.com/MosesNnajieze?t=99q-cYaODcdNMxij_QEy_g&s=09" class="fa fa-twitter play-sound"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound"></a>
+                <a href="https://www.linkedin.com/ifechukwumosesnnajieze" class="fa fa-linkedin play-sound"></a>
+                <a href="https://www.facebook.com/profile.php?id=100093497757415&mibextid=ZbWKwL" class="fa fa-facebook play-sound"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound"></a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="index.html" class="play-sound">Home</a></li>
+                <li><a href="services.html" class="play-sound">Services</a></li>
+                <li><a href="skills.html" class="play-sound">Skills</a></li>
+                <li><a href="education.html" class="play-sound">Education</a></li>
+                <li><a href="experience.html" class="play-sound">Experience</a></li>
+                <li><a href="contact.html" class="play-sound">Contact</a></li>
+            </ul>
+
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle the visibility of the navigation menu
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the audio element
+            const clickSound = document.getElementById('click-sound');
+
+            // Function to play sound
+            function playClickSound() {
+                clickSound.play();
+            }
+
+            // Add event listeners to clickable text or elements
+            const clickableElements = document.querySelectorAll('.play-sound');
+
+            clickableElements.forEach(element => {
+                element.addEventListener('click', playClickSound);
+            });
+        });
+    </script>
+</body>
+</html>

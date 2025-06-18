@@ -1,0 +1,242 @@
+/* General Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Skills Section */
+.skills-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 2rem;
+}
+
+.skill {
+    margin-bottom: 2rem;
+}
+
+.skill h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.skill ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1e90ff;
+    font-size: 1.2rem;
+    top: 0.2rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: greenyellow;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+@media (max-width: 995px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 2rem;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #161616;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #b74b4b;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-logo .logo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #b74b4b;
+    text-decoration: none;
+}
+
+.footer-socials a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #b74b4b;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.footer-links {
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+.footer-links a {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #b74b4b;
+}
+
+.footer-copyright {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+
+/* Media Query for Footer */
+@media (max-width: 768px) {
+    .footer-links li {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .footer-socials a {
+        margin: 0.5rem 1rem;
+        font-size: 2.5rem;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    nav.active {
+        display: block;
+        background-color: #333;
+        padding: 1rem;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .skills-section {
+        padding: 1rem;
+    }
+
+    .footer-links li {
+        display: block;
+        margin: 1rem 0;
+    }
+}

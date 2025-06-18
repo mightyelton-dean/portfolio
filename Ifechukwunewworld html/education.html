@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Ifechukwu</title>
+    <link rel="stylesheet" href="../ifechukwu css file/education.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <audio id="click-sound" src="./sounds/mixkit-sci-fi-click-900.wav"></audio>
+    <!-- Header -->
+    <header>
+        <div class="logo">ifechukwu</div>
+        <div class="menu-toggle">Menu</div>
+        <nav>
+             <a href="./index.html" class="active play-sound">Home</a>
+            <a href="./services.html" class="play-sound">Services</a>
+            <a href="./aboutpage.html" class="play-sound">Skills</a>
+            <a href="./education.html" class="play-sound">Education</a>
+            <a href="./experiencepage.html" class="play-sound">Experience</a>
+            <a href="./contact.html" class="play-sound">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h1>Education</h1>
+
+        <!-- Degree or Certificate 1 -->
+        <div class="education-item">
+            <h2>Bachelor of Science in Computer Science</h2>
+            <p>University of Tech - 2023</p>
+            <p>Completed a comprehensive program in Computer Science, focusing on software engineering, data structures, algorithms, and machine learning.</p>
+            <p><strong>Relevant Coursework:</strong> Advanced Algorithms, Data Science, Software Development, Machine Learning</p>
+            <p><strong>Awards:</strong> Dean's List, Best Senior Project Award</p>
+            <p><strong>Projects:</strong> Developed a web application for real-time data analytics and a machine learning model for predictive analysis.</p>
+        </div>
+
+        <!-- Degree or Certificate 2 -->
+        <div class="education-item">
+            <h2>Certification in Web Development</h2>
+            <p>Tech Academy - 2022</p>
+            <p>Completed a certification program focused on front-end and back-end web development, including HTML, CSS, JavaScript, and server-side programming.</p>
+            <p><strong>Skills Acquired:</strong> Full-Stack Development, Responsive Design, RESTful APIs</p>
+            <p><strong>Capstone Project:</strong> Created a fully functional e-commerce website with user authentication and payment integration.</p>
+        </div>
+
+        <!-- Degree or Certificate 3 -->
+        <div class="education-item">
+            <h2>Diploma in Graphic Design</h2>
+            <p>Design School - 2020</p>
+            <p>Studied graphic design principles, including typography, color theory, and digital illustration.</p>
+            <p><strong>Key Projects:</strong> Designed branding materials for local businesses and created promotional graphics for various events.</p>
+            <p><strong>Achievements:</strong> Received the “Outstanding Design” award for a multimedia advertising campaign.</p>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo play-sound">ifechukwu</a>
+            </div>
+
+            <div class="footer-socials">
+                
+                <a href="https://x.com/MosesNnajieze?t=99q-cYaODcdNMxij_QEy_g&s=09" class="fa fa-twitter play-sound"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound"></a>
+                <a href="https://www.linkedin.com/ifechukwumosesnnajieze" class="fa fa-linkedin play-sound"></a>
+                <a href="https://www.facebook.com/profile.php?id=100093497757415&mibextid=ZbWKwL" class="fa fa-facebook play-sound"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound"></a>
+                <a href="https://www.pinterest.com/ifechukwumosesnnajieze" class="fa fa-pinterest play-sound"></a>
+                <a href="https://www.snapchat.com/add/ifechukwunew?share_id=-1nDFp1q9wQ&locale=en-US" class="fa fa-snapchat-ghost play-sound"></a>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="./index.html" class="play-sound">Home</a></li>
+                <li><a href="./services.html" class="play-sound">Services</a></li>
+                <li><a href="./aboutpage.html" class="play-sound">Skills</a></li>
+                <li><a href="./education.html" class="play-sound">Education</a></li>
+                <li><a href="./experiencepage.html" class="play-sound">Experience</a></li>
+                <li><a href="./contact.html" class="play-sound">Contact</a></li>
+            </ul>
+
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle menu and update year -->
+    <script>
+        // Toggle the visibility of the navigation menu
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the audio element
+            const clickSound = document.getElementById('click-sound');
+
+            // Function to play sound
+            function playClickSound() {
+                clickSound.play();
+            }
+
+            // Add event listeners to clickable text or elements
+            const clickableElements = document.querySelectorAll('.play-sound');
+
+            clickableElements.forEach(element => {
+                element.addEventListener('click', playClickSound);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Ifechukwu</title>
+    <link rel="stylesheet" href="../ifechukwu css file/skills.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo play-sound">ifechukwu</a>
+        <button class="menu-toggle play-sound">☰</button>
+        <nav>
+            <a href="./index.html" class="play-sound">Home</a>
+            <a href="./services.html" class="play-sound">Services</a>
+            <a href="#" class="active play-sound">Skills</a>
+            <a href="./education.html" class="play-sound">Education</a>
+            <a href="./experiencepage.html" class="play-sound">Experience</a>
+            <a href="./contact.html" class="play-sound">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h1>My Professional Skills</h1>
+
+        <!-- Programmer Section -->
+        <div class="skill">
+            <h2>Programmer</h2>
+            <p>As a Programmer, I write and test code that allows computer applications and software to function seamlessly. I am skilled at translating designs and specifications into working computer programs, debugging issues, and maintaining codebases.</p>
+            <ul>
+                <li>Proficient in various programming languages (Python, JavaScript, etc.)</li>
+                <li>Debugging and code optimization</li>
+                <li>Software development and integration</li>
+            </ul>
+        </div>
+
+        <!-- Web Developer Section -->
+        <div class="skill">
+            <h2>Web Developer</h2>
+            <p>I specialize in building and maintaining websites that are both visually appealing and highly functional. My focus is on user-friendly design and efficient back-end architecture.</p>
+            <ul>
+                <li>Front-end development: HTML, CSS, JavaScript</li>
+                <li>Back-end development: Node.js, PHP</li>
+                <li>Responsive design and mobile optimization</li>
+            </ul>
+        </div>
+
+        <!-- Ethical Hacker Section -->
+        <div class="skill">
+            <h2>Ethical Hacker</h2>
+            <p>With experience in ethical hacking, I conduct penetration testing to identify vulnerabilities in systems, ensuring the highest level of security for my clients.</p>
+            <ul>
+                <li>Penetration testing and vulnerability assessment</li>
+                <li>Network security analysis</li>
+                <li>Securing data and systems</li>
+            </ul>
+        </div>
+
+        <!-- Video Editor Section -->
+        <div class="skill">
+            <h2>Video Editor</h2>
+            <p>As a video editor, I transform raw footage into engaging content. I have an eye for detail and creativity in using visual effects, transitions, and audio enhancements to tell compelling stories.</p>
+            <ul>
+                <li>Editing using Adobe Premiere Pro and Final Cut Pro</li>
+                <li>Adding transitions, effects, and audio</li>
+                <li>Creating content for YouTube, social media, and advertisements</li>
+            </ul>
+        </div>
+
+        <!-- Content Creator Section -->
+        <div class="skill">
+            <h2>Content Creator</h2>
+            <p>I create dynamic and engaging content for platforms like blogs, social media, and YouTube. My goal is to capture attention and deliver value to my audience through written, visual, and video content.</p>
+            <ul>
+                <li>Content strategy and development</li>
+                <li>Creating visual and written content for diverse platforms</li>
+                <li>Social media engagement and video production</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo play-sound">ifechukwu</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://x.com/MosesNnajieze?t=99q-cYaODcdNMxij_QEy_g&s=09" class="fa fa-twitter play-sound"></a>
+                <a href="https://www.google.com/ifechukwumosesnnajieze" class="fa fa-google play-sound"></a>
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin play-sound"></a>
+                <a href="https://www.facebook.com/ifechukwumosesnnajieze.php?id=100093497757415&mibextid=ZbWKwL" class="fa fa-facebook play-sound"></a>
+                <a href="https://www.instagram.com/ifechukwunewworld?igsh=cWI2MTFqcnpqejFk" class="fa fa-instagram play-sound"></a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="./index.html" class="play-sound">Home</a></li>
+                <li><a href="./services.html" class="play-sound">Services</a></li>
+                <li><a href="#" class="play-sound">Skills</a></li>
+                <li><a href="./education.html" class="play-sound">Education</a></li>
+                <li><a href="./experiencepage.html" class="play-sound">Experience</a></li>
+                <li><a href="./contact.html" class="play-sound">Contact</a></li>
+            </ul>
+            <p class="footer-copyright">© <span id="current-year"></span> Ifechukwu | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to toggle menu and update year -->
+    <script>
+        // Toggle the visibility of the navigation menu
+        const toggleButton = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        toggleButton.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Set current year in the footer
+        const year = new Date().getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickSound = document.getElementById('click-sound');
+            function playClickSound() {
+                clickSound.play();
+            }
+            const clickableElements = document.querySelectorAll('.play-sound');
+            clickableElements.forEach(element => {
+                element.addEventListener('click', playClickSound);
+            });
+        });
+    </script>
+</body>
+</html>
